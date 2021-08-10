@@ -1,0 +1,50 @@
+#user-card {
+  width: 25vw;
+  height: 50vh;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.user-cover {
+  background: url(/images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 40%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.user-info {
+  height: 40%;
+}
+.user-img img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  overflow: hidden;
+  margin: -50px auto 15px auto;
+}
+
+.user-age {
+  font-weight: 400;
+  margin-left: 0.5rem;
+  color: hsl(227, 10%, 46%);
+}
+
+.user-address {
+  margin-top: 1rem;
+}
+
+.user-stats {
+  @include flex(space-between, center, row);
+  height: 20%;
+  border-top: hsla(227, 10%, 46%, 0.2) 1px solid;
+  padding: 0rem 5rem 0rem 5rem;
+}
+
+.stat-type {
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
